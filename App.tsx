@@ -2,8 +2,21 @@ import './global.css';
 
 import 'react-native-gesture-handler';
 
-import RootStack from './navigation';
+import { TabNavigation } from '@components/TabNavigation';
+import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 
-export default function App() {
-  return <RootStack />;
+import Routes from './src/routes';
+
+export default function App(): JSX.Element {
+  return (
+    <>
+      <NavigationContainer>
+        <StatusBar style="light" />
+        <Routes />
+        <TabNavigation />
+      </NavigationContainer>
+    </>
+  );
 }
