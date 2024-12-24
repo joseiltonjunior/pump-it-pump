@@ -1,11 +1,13 @@
 import { RouteProp } from '@react-navigation/native';
 import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
-import { Home } from '@screens/home';
-import { Warkout } from '@screens/warkout';
+import { Calendar } from '@screens/Calendar';
+import { Home } from '@screens/Home';
+import { Warkout } from '@screens/Warkout';
 
 export type RootStackParamList = {
   Home: undefined;
-  Warkout: { name: string };
+  Warkout: undefined;
+  Calendar: undefined;
 };
 
 export type StackNavigationProps = StackNavigationProp<RootStackParamList>;
@@ -16,7 +18,7 @@ const Stack = createStackNavigator<RootStackParamList>();
 export default function RootStack() {
   return (
     <Stack.Navigator
-      initialRouteName="Home"
+      initialRouteName="Warkout"
       screenOptions={{
         headerShown: false,
         cardStyle: { backgroundColor: '#111d27' },
@@ -29,6 +31,7 @@ export default function RootStack() {
     >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Warkout" component={Warkout} />
+      <Stack.Screen name="Calendar" component={Calendar} />
     </Stack.Navigator>
   );
 }

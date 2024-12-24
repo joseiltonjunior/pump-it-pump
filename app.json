@@ -33,6 +33,11 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#374151"
       }
+    },
+    "statusBar": {
+      "backgroundColor": "#374151",
+      "barStyle": "light-content",
+      "hidden": false
     }
   }
 }
