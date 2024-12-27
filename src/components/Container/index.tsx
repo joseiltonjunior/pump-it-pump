@@ -9,7 +9,7 @@ interface ContainerProps extends PropsWithChildren {
 
 export function Container({ title, children }: ContainerProps) {
   return (
-    <View className="flex-1 bg-[#111d27]">
+    <View className="flex-1 bg-gray-700">
       <Header title={title} />
       <View className="flex-1">{children}</View>
       <TabNavigation />

@@ -8,6 +8,7 @@ export type RootStackParamList = {
   Home: undefined;
   Warkout: undefined;
   Calendar: undefined;
+  SignIn: undefined;
 };
 
 export type StackNavigationProps = StackNavigationProp<RootStackParamList>;

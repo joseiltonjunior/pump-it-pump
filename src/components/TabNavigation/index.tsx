@@ -19,7 +19,7 @@ export function TabNavigation() {
   ];
 
   return (
-    <View className="flex-row justify-between border-t border-gray-700 bg-[#111d27] px-6 pb-6 pt-1">
+    <View className="flex-row justify-between border-t border-gray-500 px-6 pb-6 pt-1">
       {tabs.map((tab) => (
         <TouchableOpacity
           key={tab.name}

@@ -8,7 +8,7 @@ interface HeaderProps {
 
 export function Header({ title }: HeaderProps) {
   return (
-    <View className="mt-10 flex-row items-center justify-between border-b border-gray-700 px-8 py-6">
+    <View className="mt-10 flex-row items-center justify-between border-b border-gray-600 px-8 py-6">
       <Text className="font-nunito-bold text-xl color-white">{title}</Text>
       <TouchableOpacity activeOpacity={0.6}>
         <Ionicons name="menu" size={22} color={colors.white} />
